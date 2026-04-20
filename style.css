@@ -564,3 +564,12 @@ button {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
+
+
+.result-score {
+  margin: 10px 0 8px;
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--naver);
+}

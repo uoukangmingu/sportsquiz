@@ -1,5 +1,5 @@
-const questionBank = [
-  {
+const multipleChoiceBank = [
+{
     id: 1,
     scope: ["all", "theory-greece"],
     badge: "핵심 이론",
@@ -601,7 +601,508 @@ const questionBank = [
   }
 ];
 
-const WRONG_STORAGE_KEY = "sportsTourismWrongStats_v2";
+const trueFalseBank = [
+  {
+    "id": 101,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "법률 약칭",
+    "question": "스포츠산업진흥법을 스포츠산업법, 체육시설이용에 관한 법률을 체육시설업으로 약칭한다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "스포츠산업 진흥법의 약칭은 스포츠산업법이 맞지만, 체육시설의 설치·이용에 관한 법률의 약칭은 체육시설업이 아니라 체육시설법이다."
+  },
+  {
+    "id": 102,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "스포츠관광 개념",
+    "question": "게츠(Getz)는 스포츠관광을 개최지의 지역 경제와 공동체의 이익을 달성할 목적으로 가진 스포츠 이벤트의 개발 및 마케팅 과정이라고 보았다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "게츠의 정의는 공급자 관점에서 스포츠이벤트의 개발과 마케팅을 통해 지역경제와 공동체 이익을 달성하는 과정에 초점을 둔다."
+  },
+  {
+    "id": 103,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "스포츠관광 유형",
+    "question": "스포츠관광의 유형은 관람형, 유산형, 체험형, 운동형으로 구분된다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "교재 기준 스포츠관광은 관람형, 유산형, 체험형, 운동형의 네 가지로 구분된다."
+  },
+  {
+    "id": 104,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "올림픽 역사",
+    "question": "제21회 몬트리올 하계 올림픽은 1972년 캐나다에서 개최되었다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "몬트리올 올림픽은 캐나다에서 열린 것이 맞지만, 개최 연도는 1972년이 아니라 1976년이다."
+  },
+  {
+    "id": 105,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "관광의 어원",
+    "question": "관광이라는 용어는 동양의 경우 『주역』의 '관국지광 이용빈우왕'에서 연원한 것으로 알려져 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "관광의 동양적 어원은 일반적으로 『주역』의 '관국지광 이용빈우왕'에서 찾는다."
+  },
+  {
+    "id": 106,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "학자별 분류",
+    "question": "깁슨(Gibson)은 스포츠관광을 능동형, 이벤트형, 노스텔지어형으로 구분한다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "깁슨은 스포츠관광을 능동형(active), 이벤트형(event), 노스텔지어형(nostalgia)으로 분류했다."
+  },
+  {
+    "id": 107,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "스포츠산업",
+    "question": "스포츠산업은 스포츠 용품 산업, 스포츠 시설 산업, 스포츠 서비스 산업으로 구분할 수 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "스포츠산업은 일반적으로 스포츠 용품업, 시설업, 서비스업의 세 영역으로 설명된다."
+  },
+  {
+    "id": 108,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "장소성",
+    "question": "스포츠관광 도시는 장소성(sense of place)과 매력성(attraction)이 중요하다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "스포츠관광 도시의 경쟁력은 경기장 규모만이 아니라 장소성과 관광 매력성에서 나온다."
+  },
+  {
+    "id": 109,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "그리스 유산",
+    "question": "파나티나이코 경기장의 관중석은 주로 대리석으로 만들어졌다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "파나티나이코 경기장은 흰 대리석 스탠드로 유명한 역사적 경기장이다."
+  },
+  {
+    "id": 110,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "관광의 정의",
+    "question": "UNWTO는 관광을 여행보다 넓은 개념으로 정의하며, 1년을 초과하는 장기 체류도 관광에 포함된다고 본다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "UNWTO 기준 관광은 여행보다 좁은 개념이며, 보통 1년 미만의 비보수 목적 이동을 뜻한다."
+  },
+  {
+    "id": 111,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "올림픽 유산",
+    "question": "올림픽 유산은 경제유산, 사회문화유산, 도시유산, 환경유산, 스포츠유산 등이 포함된다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "올림픽 유산은 경제, 사회문화, 도시, 환경, 스포츠 등 여러 범주로 나뉜다."
+  },
+  {
+    "id": 112,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "스포츠 특성",
+    "question": "스포츠는 여가활동의 하나이며, 활동성, 경쟁성, 규칙성, 불확실성의 특성을 가진다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "스포츠는 신체활동성, 경쟁성, 규칙성, 불확실성을 지닌 대표적 여가 활동으로 본다."
+  },
+  {
+    "id": 113,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "수상레저",
+    "question": "수상레저안전법에서 수상이란 해수면과 내수면을 말한다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "수상레저안전법은 수상을 해수면과 내수면으로 정의한다."
+  },
+  {
+    "id": 114,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "올림픽 유산",
+    "question": "고대 올림픽과 2004년 아테네 올림픽에서는 '월계수관'을 수여한 경우가 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "고대 올림픽과 2004년 아테네 올림픽에서 상징적으로 사용된 것은 월계수관이 아니라 올리브관이다."
+  },
+  {
+    "id": 115,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "올림픽 역사",
+    "question": "고대올림픽은 1896년 그리스에서 처음 개최되었다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "1896년 아테네에서 시작한 것은 근대 올림픽이며, 고대 올림픽은 훨씬 이전에 올림피아에서 열렸다."
+  },
+  {
+    "id": 116,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "국제 종합대회",
+    "question": "커먼웰스는 영연방체육대회이며 규모로는 아시안게임에 가깝다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "커먼웰스 게임은 영연방 국가가 참가하는 종합대회로, 수업 맥락에서는 아시안게임과 비슷한 권역형 대회로 이해한다."
+  },
+  {
+    "id": 117,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "스포츠이벤트",
+    "question": "스포츠이벤트에는 올림픽, 아시안게임, 커먼웰스, 전국체육대회 등이 포함된다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "올림픽, 아시안게임, 커먼웰스 게임, 전국체육대회 모두 대표적인 스포츠이벤트 사례다."
+  },
+  {
+    "id": 118,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "올림픽 역사",
+    "question": "근대 올림픽은 1896년 아테네 올림픽이다. 근대올림픽 100주년을 기념하는 올림픽은 애틀랜타 올림픽이다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "1896년 아테네 올림픽이 제1회 근대 올림픽이며, 1996년 애틀랜타 올림픽은 근대 올림픽 100주년 대회로 이해한다."
+  },
+  {
+    "id": 119,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "그리스 올림픽사",
+    "question": "그리스의 올림픽 역사는 BC 776년 고대올림픽, 1896년 근대올림픽, 2004년 현대 올림픽으로 구분할 수 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "수업 맥락에서는 BC 776년, 1896년, 2004년을 그리스 올림픽사의 상징적 분기점으로 정리한다."
+  },
+  {
+    "id": 120,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "서울올림픽",
+    "question": "88서울 올림픽 개막식 때 가장 먼저 입장한 나라는 아프리카의 가봉이다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "올림픽 개막식 퍼레이드에서는 전통적으로 그리스가 가장 먼저 입장한다."
+  },
+  {
+    "id": 121,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "서울올림픽 유산",
+    "question": "88서울올림픽 유치 및 유산은 정주영 명예회장과 관계가 있고, 이를 계기로 해외여행이 자율화되었으며 대한민국은 국제화되기 시작하였다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "수업 맥락에서 88서울올림픽은 정주영 명예회장, 해외여행 자율화, 국가 국제화와 함께 중요한 전환점으로 다뤄진다."
+  },
+  {
+    "id": 122,
+    "scope": [
+      "all",
+      "theory-greece"
+    ],
+    "badge": "참·거짓",
+    "sub": "그리스 안전 이미지",
+    "question": "그리스는 2004년 아테네 올림픽을 계기로 항공, 교통, 통신, 숙박과 함께 '안전'한 여행지 이미지 형성에도 도움을 받았고, 이는 올림픽 유산으로 볼 수 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "아테네 올림픽은 교통·보안 체계 확충과 국가 이미지 개선 측면에서도 유산을 남겼다."
+  },
+  {
+    "id": 123,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "야구 관람관광",
+    "question": "독일에는 베이스볼 분데스리가, 프랑스에는 디비시옹 엘리트라는 야구 리그가 있어서 두 나라로 스포츠 여행을 떠난다면 관람형 스포츠관광이 가능하다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "독일과 프랑스 모두 야구 리그가 있어 야구 경기 관람형 스포츠관광이 가능하다."
+  },
+  {
+    "id": 124,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "다크 투어리즘",
+    "question": "베를린 장벽 여행이나 나치 유태인 학살 유적지 같은 곳을 방문하는 여행을 '다크 투어리즘'이라고 할 수 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "죽음, 전쟁, 학살, 재난의 기억이 남은 장소를 찾는 여행은 다크 투어리즘으로 분류된다."
+  },
+  {
+    "id": 125,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "독일 테니스",
+    "question": "독일에는 4대 그랜드슬램 테니스대회 중 하나가 개최되고 있고, 유명한 테니스 선수로는 슈테피 그라프와 보리스 베커가 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "슈테피 그라프와 보리스 베커는 독일의 유명 선수지만, 독일에서는 4대 그랜드슬램 대회가 열리지 않는다."
+  },
+  {
+    "id": 126,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "루르 도시재생",
+    "question": "독일의 루르지방은 폐탄광 지역을 도시재생 사업으로 박물관과 수상·레저 공간 등으로 활용하고 있어 스포츠관광의 목적지가 될 수 있고 로컬의 매력성을 높일 수 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "루르 지역은 산업유산을 박물관, 공원, 레저 공간으로 재생해 관광과 로컬 브랜딩을 강화한 대표 사례다."
+  },
+  {
+    "id": 127,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "영화와 역사",
+    "question": "영화 '국제시장'의 내용에는 독일의 파독 간호사와 파독 광부 이야기가 나오고, 독일의 루르지역은 탄광 지역의 도시재생 사례로 유명하다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "국제시장에는 독일 파독 노동자 서사가 포함되며, 루르지역은 탄광·산업유산 재생 사례로 잘 알려져 있다."
+  },
+  {
+    "id": 128,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "음악·사상가 지역성",
+    "question": "1·2차 세계대전으로 인한 올림픽 미개최, 옥토버페스트, 괴테와 니체, 베토벤과 바흐는 '오스트리아'와 관련이 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "옥토버페스트는 독일 뮌헨의 축제이고, 괴테·니체·바흐·베토벤 또한 주로 독일과 연결된다."
+  },
+  {
+    "id": 129,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "여행 독서",
+    "question": "김영하의 『여행의 이유』와 박지원의 『열하일기』는 여행에 관한 다양한 시각을 전해준다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "두 작품은 서로 다른 시대와 관점에서 여행의 의미와 태도를 보여준다."
+  },
+  {
+    "id": 130,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "손기정",
+    "question": "일제 강점기 손기정 선수는 1936년 베를린 올림픽 마라톤에서 금메달을 땄고 이후 기념품으로 고대 그리스 청동 투구를 전달받았으며 현재 국립중앙박물관에 소장되어 있다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 1,
+    "explanation": "손기정 선수의 마라톤 금메달과 청동 투구의 박물관 소장은 맞지만, 그 투구가 당시 실제로 직접 전달된 것은 아니었다."
+  },
+  {
+    "id": 131,
+    "scope": [
+      "all",
+      "europe"
+    ],
+    "badge": "참·거짓",
+    "sub": "분데스리가",
+    "question": "차범근 선수와 손흥민 선수의 공통점은 독일(서독 포함)의 분데스리가에서 축구 선수로 활약하였다는 것이다.",
+    "options": [
+      "참",
+      "거짓"
+    ],
+    "answer": 0,
+    "explanation": "차범근과 손흥민 모두 독일 분데스리가 무대에서 활약했다."
+  }
+];
+
+const questionBank = [...multipleChoiceBank, ...trueFalseBank];
+
+const WRONG_STORAGE_KEY = "sportsTourismWrongStats_v3";
 
 const elements = {
   tabs: document.querySelectorAll(".tab"),
@@ -625,6 +1126,7 @@ const elements = {
   prevBtn: document.getElementById("prevBtn"),
   nextBtn: document.getElementById("nextBtn"),
   resultPanel: document.getElementById("resultPanel"),
+  resultScore: document.getElementById("resultScore"),
   resultSummary: document.getElementById("resultSummary"),
   retrySetBtn: document.getElementById("retrySetBtn"),
   reviewWrongBtn: document.getElementById("reviewWrongBtn"),
@@ -679,6 +1181,19 @@ function shuffle(array) {
   return copy;
 }
 
+function isTrueFalseQuestion(question) {
+  return question.options.length === 2
+    && question.options.includes("참")
+    && question.options.includes("거짓");
+}
+
+function getChoiceLabel(question, index) {
+  if (isTrueFalseQuestion(question)) {
+    return question.options[index] === "참" ? "O" : "X";
+  }
+  return String(index + 1);
+}
+
 function getScopedQuestions() {
   if (state.scope === "all") return [...questionBank];
   return questionBank.filter((question) => question.scope.includes(state.scope));
@@ -708,8 +1223,7 @@ function setActiveTab() {
 }
 
 function setQuestionSet(resetAnswers = true) {
-  const questions = getModeQuestions();
-  state.currentQuestions = questions;
+  state.currentQuestions = getModeQuestions();
   state.currentIndex = 0;
   if (resetAnswers) state.answers = {};
   setActiveTab();
@@ -742,7 +1256,7 @@ function render() {
     ? `내가 ${wrongMeta?.wrongCount || 0}번 틀린 문제`
     : question.badge;
   elements.questionSub.textContent = state.mode === "wrong"
-    ? `오답 누적 순 · 복습 정답 ${(wrongMeta?.reviewCorrectCount || 0)}/3`
+    ? `오답 누적 순 · 복습 정답 ${wrongMeta?.reviewCorrectCount || 0}/3`
     : question.sub;
   elements.questionTitle.textContent = question.question;
   elements.currentIndex.textContent = String(state.currentIndex + 1);
@@ -764,7 +1278,7 @@ function render() {
     const icon = getOptionIcon(question, index, answerState);
     button.innerHTML = `
       <span class="option-label">
-        <span class="choice-index">${index + 1}</span>
+        <span class="choice-index">${getChoiceLabel(question, index)}</span>
         <span>${option}</span>
       </span>
       <span class="choice-icon">${icon}</span>
@@ -833,7 +1347,9 @@ function showExplanation(question, answerState) {
   elements.explanationBox.hidden = false;
   elements.resultBadge.className = `explanation-badge ${answerState.correct ? "correct" : "wrong"}`;
   elements.resultBadge.textContent = answerState.correct ? "정답" : "오답";
-  elements.answerText.textContent = `정답은 ${question.answer + 1}번입니다.`;
+  elements.answerText.textContent = isTrueFalseQuestion(question)
+    ? `정답은 '${question.options[question.answer]}'입니다.`
+    : `정답은 ${question.answer + 1}번입니다.`;
   elements.explanationText.textContent = question.explanation;
 }
 
@@ -908,13 +1424,16 @@ function renderResultPanel() {
   const correct = state.currentQuestions.filter((question) => state.answers[question.id]?.correct).length;
   const wrong = total - correct;
   const accuracy = Math.round((correct / total) * 100);
+
+  elements.resultScore.textContent = `정답 ${correct} / ${total}`;
+
   if (state.mode === "wrong") {
     const remainingWrong = getScopedQuestions().filter((question) => state.wrongStats[question.id]?.wrongCount > 0).length;
-    elements.resultSummary.textContent = `총 ${total}문항 중 ${correct}문항 정답, ${wrong}문항 오답입니다. 현재 세트 정답률은 ${accuracy}%이며, 많이 틀리는 문제는 ${remainingWrong}문항 남았습니다. 복습 탭에서 맞힌 문제는 3번 정답 시 자동 제거됩니다.`;
+    elements.resultSummary.textContent = `오답 ${wrong}문항 · 정답률 ${accuracy}% · 많이 틀리는 문제에 ${remainingWrong}문항이 남아 있습니다. 복습 탭에서 3번 맞히면 자동 제거됩니다.`;
     return;
   }
 
-  elements.resultSummary.textContent = `총 ${total}문항 중 ${correct}문항 정답, ${wrong}문항 오답입니다. 현재 세트 정답률은 ${accuracy}%입니다.`;
+  elements.resultSummary.textContent = `오답 ${wrong}문항 · 정답률 ${accuracy}%입니다.`;
 }
 
 function moveQuestion(direction) {
